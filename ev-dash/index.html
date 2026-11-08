@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EV Dash</title>
+<meta name="description" content="EV Dash shows live battery, charging and drive data from Hyundai, Kia and Genesis EVs on your phone and on the car screen through Android Auto.">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1d1f21; --muted: #5c6166; --rule: #e2e2dd; --accent: #1f6f5c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141617; --fg: #e8e8e6; --muted: #9aa0a6; --rule: #2a2d2f; --accent: #5fc4a8; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 56px 16px 48px; }
+  .mark { font: 600 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; color: var(--accent); }
+  h1 { font-size: 34px; line-height: 1.2; margin: 12px 0 8px; letter-spacing: -.01em; }
+  .lede { color: var(--muted); font-size: 19px; margin: 0 0 40px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 40px 0 12px; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); margin-top: 56px; padding-top: 16px; color: var(--muted); font-size: 14px; }
+  .shots { display: flex; gap: 16px; align-items: flex-start; margin: 8px 0 0; }
+  .shots img { border: 1px solid var(--rule); border-radius: 10px; display: block; }
+  .shots .phone { width: 34%; height: 320px; object-fit: cover; object-position: top; }
+  .shots .car { width: 66%; height: auto; }
+  @media (max-width: 520px) { .shots { flex-direction: column; } .shots .phone, .shots .car { width: 100%; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>EV Dash</h1>
+  <p class="lede">Live battery, charging and drive data from your EV, on your phone and on the car screen.</p>
+
+  <div class="shots">
+    <img class="phone" src="phone.png" alt="EV Dash on a phone: state of charge, pack power, range and battery details">
+    <img class="car" src="car.png" alt="EV Dash on an Android Auto car screen: a grid of tiles with SoC, energy left and pack power">
+  </div>
+
+  <h2>What it shows</h2>
+  <ul>
+    <li>State of charge, pack power, energy left and a range estimate</li>
+    <li>Battery health, every cell voltage, temperatures and the 12&nbsp;V battery</li>
+    <li>Charging sessions with live power, history and charge curves</li>
+    <li>Drives logged to History, with CSV export</li>
+    <li>A tile dashboard on the car screen through Android Auto</li>
+  </ul>
+
+  <h2>Cars</h2>
+  <p>Hyundai Ioniq&nbsp;5, Ioniq&nbsp;6 and Ioniq&nbsp;9, Kia EV6, EV9 and EV3, and Genesis GV60. EV Dash reads the car through an ELM327-compatible OBD adapter (Bluetooth LE, Bluetooth or Wi-Fi), such as the OBDLink CX.</p>
+
+  <h2>Read-only</h2>
+  <p>EV Dash only reads data. It never sends commands that change anything in the car.</p>
+
+  <h2>Availability</h2>
+  <p>EV Dash is in private testing on Android and Android Auto.</p>
+
+  <h2>Support</h2>
+  <p>Questions, bug reports and requests: <a href="https://github.com/mattsm/ev-dash-support/issues">GitHub issues</a> · <a href="privacy.html">Privacy policy</a></p>
+
+  <footer>&copy; 2026 <a href="../">M4 Embedded, LLC</a>. Some vehicle signal definitions come from <a href="https://github.com/OBDb">OBDb</a> (CC BY-SA 4.0). Hyundai, Kia, Genesis and Android Auto are trademarks of their owners; EV Dash is not affiliated with them.</footer>
+</main>
+</body>
+</html>

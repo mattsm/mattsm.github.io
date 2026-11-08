@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EV Dash privacy policy</title>
+<meta name="description" content="Privacy policy for the EV Dash Android app by M4 Embedded, LLC.">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1d1f21; --muted: #5c6166; --rule: #e2e2dd; --accent: #1f6f5c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #141617; --fg: #e8e8e6; --muted: #9aa0a6; --rule: #2a2d2f; --accent: #5fc4a8; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 72px 16px 48px; }
+  .mark { font: 600 13px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .12em; color: var(--accent); }
+  h1 { font-size: 34px; line-height: 1.2; margin: 12px 0 8px; letter-spacing: -.01em; }
+  .lede { color: var(--muted); font-size: 19px; margin: 0 0 40px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 40px 0 12px; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  footer { border-top: 1px solid var(--rule); margin-top: 56px; padding-top: 16px; color: var(--muted); font-size: 14px; }
+  .shots { display: flex; gap: 16px; align-items: flex-start; margin: 8px 0 0; }
+  .shots img { border: 1px solid var(--rule); border-radius: 10px; display: block; }
+  .shots .phone { width: 34%; height: 320px; object-fit: cover; object-position: top; }
+  .shots .car { width: 66%; height: auto; }
+  @media (max-width: 520px) { .shots { flex-direction: column; } .shots .phone, .shots .car { width: 100%; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark"><a href="./" style="color:inherit;text-decoration:none">EV DASH</a></div>
+  <h1>Privacy policy</h1>
+  <p class="lede">Effective November 8, 2026</p>
+
+  <p>EV Dash is an Android and Android Auto app made by M4 Embedded, LLC. This policy covers what the app does with data.</p>
+
+  <h2>Short version</h2>
+  <p>EV Dash does not collect, send or sell any data. Everything it reads stays on your phone.</p>
+
+  <h2>What the app reads</h2>
+  <ul>
+    <li><strong>Vehicle data</strong> from your OBD adapter, such as state of charge, battery and charging values, speed, odometer, tire pressures and the VIN (used to identify the model).</li>
+    <li><strong>Car data shared through Android Auto</strong>, such as state of charge, range, speed and odometer, when EV Dash is open on the car screen.</li>
+  </ul>
+  <p>This data is shown in the app and saved on your phone as drive, charge and log history. It is never uploaded. EV Dash has no account, no analytics, no ads and no crash reporting.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Nearby devices (Bluetooth)</strong>: to find and connect to your OBD adapter. EV Dash does not use Bluetooth to determine your location.</li>
+    <li><strong>Network</strong>: only to talk to a Wi-Fi OBD adapter on the local network. EV Dash makes no internet connections.</li>
+    <li><strong>Notifications</strong>: for the connection status and the optional unplug reminder.</li>
+    <li><strong>Car data</strong>: to read the values listed above through Android Auto or Android Automotive.</li>
+  </ul>
+
+  <h2>Sharing</h2>
+  <p>Data leaves your phone only when you choose to share a log or a diagnostics file through Android's share sheet, and it goes only where you send it.</p>
+
+  <h2>Deleting data</h2>
+  <p>You can delete history in the app. Uninstalling EV Dash, or clearing its storage in Android settings, removes everything it saved.</p>
+
+  <h2>Children</h2>
+  <p>EV Dash is not directed at children and collects no personal information from anyone.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>M4 Embedded, LLC · Colorado Springs, Colorado<br>
+  Questions about this policy: <a href="https://github.com/mattsm/ev-dash-support/issues">open an issue on GitHub</a></p>
+
+  <footer>&copy; 2026 M4 Embedded, LLC</footer>
+</main>
+</body>
+</html>
